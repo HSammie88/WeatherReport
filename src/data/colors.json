@@ -1,0 +1,45 @@
+{
+    "default": {
+      "mainBackground": "#1e3a8a",
+      "secondaryBackground": "#3b82f6",
+      "textColor": "#ffffff",
+      "inputBackground": "#dbeafe",
+      "buttonBackground": "#2563eb"
+    },
+    "mist": {
+      "background": "#374151",
+      "lighterBackground": "#4b5563"
+    },
+    "snow": {
+      "background": "#e5e7eb",
+      "lighterBackground": "#f3f4f6"
+    },
+    "thunderstorm": {
+      "background": "#1f2937",
+      "lighterBackground": "#374151"
+    },
+    "rain": {
+      "background": "#93c5fd",
+      "lighterBackground": "#bfdbfe"
+    },
+    "shower rain": {
+      "background": "#1e40af",
+      "lighterBackground": "#3b82f6"
+    },
+    "broken clouds": {
+      "background": "#f8fafc",
+      "lighterBackground": "#ffffff"
+    },
+    "scattered clouds": {
+      "background": "#ffffff",
+      "lighterBackground": "#f9fafb"
+    },
+    "few clouds": {
+      "background": "#fffbeb",
+      "lighterBackground": "#fef3c7"
+    },
+    "clear sky": {
+      "background": "#fef3c7",
+      "lighterBackground": "#fef7cd"
+    }
+  }

@@ -1,8 +1,20 @@
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import WeatherReport from './components/WeatherReport/WeatherReport'
 import './App.css'
-import React from 'react'
+import colors from './data/colors.json'
+import { useState } from 'react'
 
 export default function App(){
-    return <div>
-        
-    </div>
+    const [backgroundWeather, setBackgroundWeather] = useState(colors['clear sky'].lighterBackground)
+
+    return (
+        <div style={{
+            backgroundColor: backgroundWeather
+        }} className='main-container'>
+            <Header/>
+            <WeatherReport setter={setBackgroundWeather}/>
+            <Footer/>
+        </div>
+    )
 }
