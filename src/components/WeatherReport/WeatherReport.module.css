@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes buttonAnim {
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.report-container{
+    min-width: 600px;
+    min-height: 800px;
+    margin-top: 100px;
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container{
+    width: 400px;
+    height: 50px;
+    position: relative;
+}
+
+.input-container button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 100px;
+    width: 50px;
+    height: 100%;
+    border: none;
+    font-size: 40px;
+}
+.input-container button:hover{
+    cursor: pointer;
+}
+.input-container button:focus{
+    animation: buttonAnim .5s;
+}
+
+.input-container input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    border-radius: 100px;
+    padding: 0 15px;
+    border: .5px solid gray;
+    font-family: "Noto Serif", sans-serif;
+}
+
+.weather-card-container{
+    height: 600px;
+    width: fit-content;
+    display: flex;
+}
+
+.weather-card{
+    width: 300px;
+    height: 80%;
+    transform: skew(-15deg);
+    position: relative;
+    margin: 40px 5px;
+    transition: scale .5s;
+}
+.weather-card:hover{
+    scale: 1.05;
+}
+
+.unskewed-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skew(15deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: "Noto Serif", sans-serif;
+}
+
+.card-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+.card-second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-last-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+}
+
+.card-last-container h5{
+    margin: 5px;
+}

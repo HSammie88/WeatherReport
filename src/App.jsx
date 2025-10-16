@@ -6,7 +6,7 @@ import colors from './data/colors.json'
 import { useState } from 'react'
 
 export default function App(){
-    const [backgroundWeather, setBackgroundWeather] = useState(colors['clear sky'].lighterBackground)
+    const [backgroundWeather, setBackgroundWeather] = useState(colors.default.secondaryBackground)
 
     return (
         <div style={{

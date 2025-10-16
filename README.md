@@ -1,16 +1,41 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простое приложение для отслеживания погоды в разных городах.
 
-Currently, two official plugins are available:
+## Функциональность
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Поиск и добавление городов**
+- Введите название города в поле ввода
+- Для поиска нажмите кнопку ">" или клавишу Enter
+- Максимальное количество городов - 5
 
-## React Compiler
+**Управление карточками**
+- Кликните на карточку города для ее удаления
+- При наведении на карточку фон приложения меняется в соответствии с погодными условиями
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Отображаемая информация**
+- Текущая температура в °C
+- Описание погодных условий
+- Скорость ветра в kph
+- Влажность в %
+- Атмосферное давление в MBar
+- Дата и время последнего обновления
 
-## Expanding the ESLint configuration
+**Визуальный дизайн**
+- Уникальные цветовые схемы для разных типов погоды
+- Скошенные карточки с читаемым текстом
+- Плавные переходы и интерактивные элементы
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Обработка ошибок**
+- Сообщения об ошибках при вводе несуществующего города
+- Предупреждение при достижении лимита городов
+- Автоматическое сохранение данных в localStorage
+
+**Технические особенности**
+- Данные сохраняются локально
+- При перезагрузке страницы список городов восстанавливается
+- Адаптивный интерфейс
+
+## Использование
+
+Для начала работы введите название города в поле поиска и добавьте его в список для отслеживания погоды.
